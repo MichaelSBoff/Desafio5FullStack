@@ -1,0 +1,67 @@
+#text {
+  position: relative;
+
+  margin-bottom: 11.5625rem;
+  margin-inline: auto;
+
+  text-align: center;
+
+  font: var(--subtitle);
+  width: 20.9375rem;
+
+  & img {
+    position: absolute;
+  }
+
+  & img:nth-child(2) {
+    width: 2.5rem;
+    height: 2.5rem;
+
+    top: -3rem;
+    left: 76%;
+    rotate: 25deg;
+  }
+
+  & img:nth-child(3) {
+    width: 2.5rem;
+    height: 2.5rem;
+
+    bottom: -1rem;
+    left: 0;
+    rotate: -100deg;
+  }
+
+  & img:nth-child(4) {
+    width: 2.5rem;
+    height: 2.5rem;
+
+    bottom: -2rem;
+    right: 0;
+    rotate: 30deg;
+  }
+} 
+
+@media (width >= 80rem) {
+  & #text {
+    width: 71rem;
+    margin-bottom: 29.6rem;
+
+    & img:nth-child(2) {
+      top: -6rem;
+      left: 46%;
+      rotate: 25deg;
+    }
+  
+    & img:nth-child(3) {
+      bottom: -6rem;
+      left: 0;
+      rotate: 100deg;
+    }
+  
+    & img:nth-child(4) {
+      bottom: -6rem;
+      right: 0;
+      rotate: -15deg;
+    }
+  }
+}
